@@ -1,12 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+
+  footer{
+ background: url(img/footer.jpg);
+}
+
+.wrapper{
+   background:#666666 url(img/background.jpg) repeat;
+}
+
+header{
+ background:#666666 url(img/header.png);
+}
+ 
+.search{
+background: url(img/l1.png)  no-repeat center left;
+}
+.parashut{
+background: url(img/parashut.jpg) no-repeat;
+}
+#s_jpg3{
+    background: url(img/d1.jpg) no-repeat;
+  
+ }
+#s_jpg2{
+    background: url(img/d2.jpg)  no-repeat;
+ }
+
+#formH{
+    background: url(img/formH.jpg) no-repeat center left;
+}
+
+.ittinery input[placeholder='Mt. Bromo']{
+    background: url(img/mini-obl.jpg);
+}
+
+.ittinery input[placeholder='Batu City']{
+    background: url(img/mini-mel.png);
+}
+
+.ittinery input[placeholder='Batu City'] , .ittinery input[placeholder='Mt. Bromo']{
+    background-color: white;
+    background-position-x: 2%;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+}
+
+.ittinery input[value='Save as PDF']{
+    background-image: url(img/but-dis.jpg);
+}
+
+  .ittinery input[value='Print']{
+    background-image: url(img/but-print.jpg);
+}
+
+.contact{
+    background: url(img/backg-contact.jpg) no-repeat;
+ }
+
+.background2{
+    background: url(img/backgroun2.jpg) no-repeat;
+   height: 280px;
+    top:100%;
+    position: relative;
+    width:100%; 
+}
+
+.contact__text>ul{
+    list-style-image: url(img/euser.png);
+}
+/*
+/*Несработал background в style css*/
+  </style>
 </head>
 <body>
+   <div class="wrapper">
+        <header>
+            <div class='logo'>YokNgalam</div>
+                <nav>
+                    <ul>
+                        <li><a href='home'>Home</a> </li>   
+                        <li> <a href='Des'>Destination</a></li>
+                        <li><a href='Iti'>Itinaty</a></li>
+                        <li> <a href="rew"> Review</a></li>
+                        <li><a href='Con'> Contact</a></li>
+                    </ul>
+                </nav>
+            <div class='header-text'>lets get 
+                    <span class="lost">lost</span>
+            </div>
+            <div class='header_long_text'>Malang will never dissapointed you.
+        From every step you took you will be amazed and suddenly fallin love with Malang
+            </div>
+            <input type="button"  class='logo-button' value='Set ittinery now'>
+        </header>
+<!--//////////////////////////////////////////////////////////////////////////////////////-->
+        <div class='content'>
+            <div class='city'>
+                <img src="img/melnica.jpg" class='melnica'>
+                <span class="d_header">City of
+                    <span class='lost'>Love</span>
+                </span>
+                <p class='d_header-text'>Malang is the second largest city in East Java province, Indonesia. It has a history dating back to the ancient Mataram Kingdom. The c
+                    is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.</p>
+            </div>
+
+            <div class='Destination'>
+                <span class="t_header">Des <span class="lost">tination</span></span>
+               <span class='see'> <img src="img\iser.png">see basic reguletion</span>
+                <p class='t_header-text '>Being around by many mountain, Malang not only came with mountain vacation, but our beach,
+                    cultural spot, and Human Interest is worth to experienced.</p>
+                <input type="text" class="search" placeholder='serial Destination'>
+                <span class='search_sp'><span>ALL PLACE   /  </span>RECOMENDED PLACE</span>
+        
+            <div class='parashut'>
+                <div class='fon block1'> 
+                    <span class='batu span'>Batu</span>
+                    <p class='i_header-text'> 
+                        is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city.
+                        A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.  
+                    </p>
+            </div>
+              </div>
+             
+                 <div class='slider'>
+
+                    <div id='s_jpg2'>
+                            <div class='fon block2'>
+                   
+                            <span class="bromo span">Bromo</span>
+     <p style='width: 300px;height:200px;color:grey;padding-top:120px;line-height: 23px;padding-left:40px'>  Mount Bromo is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known
+                   </p> 
+                </div>
+
+                </div>
+                <div id='s_jpg3'>  
+                    <img src="img/palm.png" alt="">
+                </div>
+            
+                     <ul class="navigation">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>></li>
+                        <li>>></li>
+                    </ul>
+                </div>
+      
+            </div>
+
+<!--///////////////////////////////////////////////////////////-->
+    <div class="ittinery">
+         <span class='d_header'>Set 
+             <span class='lost'>Ittinery</span>
+        </span>
+         <p class="s_header-text">Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.
+                have a great trip !</p>
+
+         <form action="">
+
+             <div id='formH'>
+                 <span>Your Ittinery Title Here</span>
+            </div>
+
+            <div class='day' id='day1'>
+                <span class='lost'>1 Day</span>
+                <select>
+                    <option>05/29/2015</option>
+                    <option></option>
+                </select>
+            </div>
+                <input type="text" placeholder="Mt. Bromo">
+                <input type="text" placeholder="Batu City">
+            <div class='day' id='day2'>
+                <span class='lost'>2 Day</span>
+                <select>
+                    <option>05/29/2015</option>
+                    <option>Пункт 2</option>
+                </select>
+            </div>
+
+            <div id='drag'>Drag Destination here</div>
+                <input type="button" value='Save as PDF'>
+                <input type="button" value='Print'>
+        </form>
+            <div class="i__block2">
+                    <span class="i__block2-span">List of Destination</span>
+                  
+                    <input type="text" class="i__block2-find"  placeholder="sort by:Mountain">  <img src="img\l1.png">
+                    <ul class="i__block2-list">
+                        <li>Mt. Bromo<img src="img\bromo_LoD.png"></li> 
+                        <img class="img" src="img\bromo_LoD.png"><li>Mt. Panderman</li>
+                        <li>Mt. Semeru<img src="img\bromo_LoD.png"></li> 
+                        <li>Mt. Bromo<img src="img\bromo_LoD.png"></li>
+                        <li>Mt. Bromo<img src="img\bromo_LoD.png"></li>
+                    </ul> 
+            </div>
+       </div>
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        <div class="contact">
+                <span class="c_header"> Contact</span>
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Your Email">
+                    <input type="text" placeholder="Company">
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your messages"></textarea>
+                    <input type="button" value='send message'>
+                </form>
+            <div class='contact__text'>
+                <h2>You Can Find Us Here</h2>
+                <span> <img src="img\ehome.png" style="margin-top:25px;margin-left:-35px"> Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang</span>
+                <h4>FIND ON MAPS</h4>
+                    <ul  class='sp'>
+                            <li>(+62) 8816723812</li>
+                            <li>(+62) 8512371632</li>
+                    </ul>
+            </div>
+        </div>
+         <div class="keep">
+                <span class="k_header">Keep and Touch</span>
+                <p class="k_header-text">We Will Give you latest information about Malang</p>
+                <form action="">
+                    <input type='text' placeholder="Type Email Here for Subscribe">
+                    <input  type="button" value='>'>
+                </form>
+        </div>
+            <div class="background2"> 
+                  
+                <div class='b__line1'>
+                    <div class='b__line-con'>
+                       <img src="img/f1.png">
+                       <img src="img/twiter.png">
+                       <img src="img/facebook.png">
+                   </div>
+                <div class="b__line1-menu">
+                    <ul>
+                       <li>Term & Condition</li>
+                       <li> Polic</li>
+                       <li> Privacy</li>
+                    </ul>
+                   </div>
+                 <datalist></datalist>
+               </div>
+               
+           </div>
+           <span style='text-align:center;margin:0 auto;font-size:14px; position:absolute;display:inline-block; background-color:#2f2933;left:0px;right:0;color:grey;bottom:15px'>
+            copyright YokMalang All right Reserved. 2015</span>
+        </div>
+         <footer></footer>
+    </div>
     
 </body>
 </html>
